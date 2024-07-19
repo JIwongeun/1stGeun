@@ -1,0 +1,8 @@
+# 공통 함수 다운로드
+!git clone https://github.com/wikibook/pythonlibs.git
+
+# 공통 함수 불러오기
+from pythonlibs.torch_lib1 import *
+
+# 공통 함수 확인
+print(README)
