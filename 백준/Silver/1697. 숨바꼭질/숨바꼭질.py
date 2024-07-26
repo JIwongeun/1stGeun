@@ -3,7 +3,7 @@ from collections import deque
 
 MAX = 10 ** 5
 
-def bfs(n:int, k:int, visited:dict):
+def bfs(n:int, k:int, visited:list):
     q=deque()
     q.append(n)
     
