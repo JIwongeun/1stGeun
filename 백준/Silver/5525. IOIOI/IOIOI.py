@@ -7,18 +7,22 @@ def main():
     length=int(input().strip())
     string=input().strip()
 
-    Pn='IO'*n+'I'
-    size=2*n+1   
-
     result=0
+    count=0
+    i=0
 
-    for i in range(len(string)-size+1):
-        if string[i:size]==Pn:
-            result+=1
-        size+=1
+    while i<length-1:
+        if string[i:i+3]=='IOI':
+            count+=1
+            i+=2
+            if count==n:
+                result+=1
+                count-=1
+        else:
+            i+=1
+            count=0
 
     print(result)
-    
 
 if __name__ == "__main__":
     main()
