@@ -1,5 +1,8 @@
 import sys
 
+def distance(n1,n2):
+        return abs((n2[0]-n1[0])**2+abs(n2[1]-n1[1])**2)
+
 def main():
 
     input = sys.stdin.readline
@@ -7,9 +10,6 @@ def main():
     t=int(input().strip())
     square=[]
     tmp=0
-
-    def distance(n1,n2):
-        return abs((n2[0]-n1[0])**2+abs(n2[1]-n1[1])**2)
 
     for _ in range(t):
         square=[]
